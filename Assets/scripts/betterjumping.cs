@@ -29,7 +29,7 @@ public class betterjumping : MonoBehaviour
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-            animator.SetBool("goingdown", true);
+            animator.SetBool("goingdown", rb.velocity.y < 0);
             
 
         }

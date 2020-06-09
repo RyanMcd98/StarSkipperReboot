@@ -62,47 +62,75 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\assets\wall jump.cs" />
     <Compile Include="Assets\playermovement.cs" />
     <Compile Include="Assets\scripts\CharacterController2D.cs" />
     <Compile Include="Assets\scripts\betterjumping.cs" />
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/desktop2/StarSkipperReboot/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/old desktops/desktop2/Starskipepr project/StarSkipperReboot/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

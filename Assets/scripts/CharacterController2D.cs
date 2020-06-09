@@ -12,17 +12,33 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
 
+    public ParticleSystem dust;
+
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
-	private bool m_Grounded;            // Whether or not the player is grounded.
+	public bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
     public Animator animator;
 
-	[Header("Events")]
-	[Space]
+    //walljumping
+    public float walljumptime = 0.2f;
+    public float wallslidespeed = 0.3f;
+    public float walldistance = 0.5f;
+    bool iswallsliding = false;
+    RaycastHit2D wallcheck;
+    float jumptime;
+    bool Jump = false;
+    float facingspeed;
+    bool facingleft = false;
+    bool facingright = true;
+    
 
+
+    [Header("Events")]
+	[Space]
+    
 	public UnityEvent OnLandEvent;
 
 	[System.Serializable]
@@ -62,7 +78,39 @@ public class CharacterController2D : MonoBehaviour
                 animator.SetBool("Isjumping", false); 
 			}
 		}
-	}
+        //what way is character facing
+        if (facingspeed > 0)
+       {
+            facingright = true;
+           facingleft = false;
+         }
+        if (facingspeed < 0)
+        {
+            facingright = false;
+           facingleft = true;
+
+        }
+
+        Controller.Move(HorizontalMove * Time.fixedDeltaTime, false, Jump);
+        Jump = false;
+        Debug.Log("moving");
+
+        //wall jump
+
+        if (facingright == true)
+        {
+            wallcheck = Physics2D.Raycast(transform.position, new Vector2(walldistance, 0), walldistance, groundlayer);
+
+        }
+        else
+        {
+            wallcheck = Physics2D.Raycast(transform.position, new Vector2(-walldistance, 0), walldistance, groundlayer);
+        }
+         if (wallcheck && !m_Grounded)
+        {
+
+        }
+    }
 
 
 	public void Move(float move, bool crouch, bool jump)
@@ -149,5 +197,11 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+        CreatDust();
 	}
+
+    void CreatDust()
+    {
+        dust.Play();
+    }
 }
