@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class betterjumping : MonoBehaviour
 {
+    //script to handle accurate jumping and walljumping
+
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     public Animator animator;
-
-    
 
     Rigidbody2D rb;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     void Update()
